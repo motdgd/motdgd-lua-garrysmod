@@ -35,7 +35,7 @@ end
 function enableMotdGDClose()
         motdgdbutton:SetDisabled( false )
         motdgdbutton:SetText( "Close" )
-        motdgdbutton.DoClick = function() motdgdwindow:SetVisible( false ) end
+        motdgdbutton.DoClick = function() motdgdwindow:SetVisible( false ) motdgdwindow:Remove() end
 end
 
 function motdGDCountDown()
